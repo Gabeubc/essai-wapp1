@@ -1,0 +1,272 @@
+/*nav bar*/
+
+.custom-navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.custom-brand-name {
+  font-size: 24px;
+  color: var(--gray-dark);
+}
+
+.custom-container-login {
+  cursor: pointer;
+}
+
+.custom-login-icon {
+  font-size: 24px;
+  color: var(--gray-dark);
+  font-weight: bold;
+}
+
+/* feed */
+
+
+.custom-container-button{
+  margin-top: 7.5%;
+}
+
+.custom-feed-container {
+  padding: 4%;
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.custom-card {
+  margin: 2%;
+  border-radius: 4%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.custom-card-body {
+  height: 100%;
+}
+
+.custom-card:hover {
+  transform: translateY(-2%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card-img {
+  height: 25%;
+  object-fit: cover;
+  border-top-left-radius: 4%;
+  border-top-right-radius: 4%;
+}
+
+.custom-card-header {
+  font-size: 2vw;
+  font-weight: bold;
+  margin: 1%;
+  color: var(--gray-dark);
+}
+
+.custom-card-description {
+  margin: 0 1% 1%;
+  color: var(--gray-dark);
+}
+
+.custom-card-read-more {
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.custom-card-read-more:hover {
+  background-color: var(--blue);
+  transform: scale(1.02);
+  border: none;
+}
+
+/* page */
+
+.custom-page-public {
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-img-page {
+  width: 75%;
+  height: 75%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 4%;
+}
+/*
+.custom-paragraph-form {
+  width: 100%;
+  margin-bottom: 4%
+}
+*/
+.custom-page-public h1 {
+  font-size: 2.6vw;
+  font-weight: bold;
+  margin: 4% 0 2%;
+  text-align: center;
+  color: var(--secondary);
+}
+
+.custom-page-public p {
+  font-size: 1.3vw;
+  line-height: 1.5;
+  color: var(--secondary);
+  text-align: center;
+  margin-bottom: 6%;
+}
+
+
+/* fomr login */
+
+.custom-login-container {
+  margin-top: 5%;
+}
+
+.custom-login-container h2 {
+  font-size: 2.6%;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.custom-login-container .alert {
+  margin-bottom: 1%;
+}
+
+.custom-login-container .form-group label {
+  font-weight: bold;
+}
+
+.custom-login-container .form-control {
+  margin-bottom: 1.5%;
+}
+
+.custom-login-container .btn {
+  margin-top: 1%;
+}
+
+.custom-login-container .my-2 {
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+.custom-login-container .mx-2 {
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+
+/* back office edit generic user */
+
+
+
+.custom-page-backoffice {
+  margin-top: 5%;
+  padding: 4%;
+}
+
+.custom-form-page-public-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5%;
+}
+
+.custom-header-form {
+  display: flex;
+  align-items: center;
+  gap: 2.5%;
+  margin-bottom: 5%;
+}
+
+.custom-img-page {
+  width: 75%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-paragraph-form {
+  display: flex;
+  align-items: center;
+  gap: 2.5%;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.custom-on-submit-opiton {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2.5%;
+  margin-bottom: 4%;
+  margin-left: 2.5%;
+}
+
+.custom-button {
+  width: 30%;
+}
+
+.custom-parameter {
+  width: 25%;
+}
+
+.custom-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-img-container-sub  .custom-img-page {
+  width: 100%;
+  justify-content: center;
+}
+
+.custom-arrow {
+  margin: 2.5%;
+  text-align: center;
+}
+
+.custom-arrows-block {
+  width: fit-content;
+}
+
+.custom-arrows-img {
+  justify-content: center;
+}
+
+.custom-arrow:hover {
+  transform: scale(1.05);
+  transition: 0.1 ease-in-out;
+  cursor: pointer;
+}
+
+.custom-buttons{
+  margin: 2.5%;
+  gap: 2.5%;
+}
+
+
+.custom-page-state{
+  margin-top: 7%;
+  border: none;
+  font-weight: bold;
+}
+
+.custom-trash{
+  width: 175%;
+  cursor: pointer;
+  color: var(--danger)
+}
+
+.custom-trash:hover{
+  cursor: pointer;
+  color: var(--danger);
+  transition: 0.1 ease-in-out;
+  transform: scale(1.05);
+}
+
+.custom-buttom-homepage{
+  width: 150px;
+}

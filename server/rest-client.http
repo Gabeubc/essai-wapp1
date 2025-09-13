@@ -1,0 +1,127 @@
+### Login
+
+POST http://localhost:3001/api/session
+Content-Type: application/json
+
+{
+    "username": "user1@example.com",
+    "password": "ciao"
+}
+
+### LogOut
+
+DELETE  http://localhost:3001/api/session/current
+
+### Get all pages front office
+
+http://localhost:3001/api/frontoffice/pages
+
+
+### Get all pages backoffice office
+
+http://localhost:3001/api/backoffice/pages
+
+### Get all images
+
+http://localhost:3001/api/backoffice/images
+
+### Get all pages backoffice office
+
+http://localhost:3001/api/backoffice/pages/32
+
+### Get all pages front office office
+
+http://localhost:3001/api/frontoffice/pages/32
+
+
+### Get all authors
+http://localhost:3001/api/backoffice/authors
+
+
+### Get author by email
+http://localhost:3001/api/backoffice/pages/authors?email=user1@example.com
+
+
+
+### delete page
+
+DELETE http://localhost:3001/api/backoffice/pages/2
+
+
+### Edit Page Generic User
+
+POST http://localhost:3001/api/backoffice/pages/2
+Content-Type: application/json
+
+{ 
+    "content": [
+      {
+        "h_id": 3,
+        "p_id": 2,
+        "header_content": "Header 3",
+        "order": 0
+      },
+      {
+        "img_id": 3,
+        "p_id": 2,
+        "img_path": "3.png",
+        "order": 2
+      },
+      {
+        "pg_id": 3,
+        "p_id": 2,
+        "paragraph_content": "Paragraph 3",
+        "order": 1
+      }
+    ]
+  
+}
+
+
+### Edit Page Admin User
+
+POST http://localhost:3001/api/backoffice/pages/1/admin
+Content-Type: application/json
+
+{
+    "email": "user2@example.com",
+    "header_content": "My world",
+    "img_path": "2.png",
+    "paragraph_content": "hello world",
+    "header_order": "2",
+    "img_order": 1,
+    "paragraph_order": 3,
+    "web_site_name": "Graaande"
+}
+
+### Create new Page
+
+POST http://localhost:3001/api/backoffice/pages
+Content-Type: application/json
+
+{
+    "content": [
+        {
+            "p_id": " ",
+            "header_content": "New Header",
+            "order": 0,
+            "added": true
+        },
+        {
+            "p_id": " ",
+            "header_content": "New Header",
+            "order": 1,
+            "added": true
+        },
+        {
+            "p_id": " ",
+            "paragraph_content": "New paragraph",
+            "order": 2,
+            "added": true
+        }
+    ],
+    "admin": false,
+    "web_site_name": "weee",
+    "publication_date": "2023-06-07",
+    "email": " "
+}
